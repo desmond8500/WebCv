@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="fw-bold">{{ experience.debut }} - {{ experience.fin }}</div>
+    <div>{{ experience.ville }} - {{ experience.pays }}</div>
+  </div>
+  <div class="col-md-9">
+    <div class="fw-bold">{{ experience.entreprise }}</div>
+    <div class="fw-bold">Taches réalisés</div>
+    <ul>
+      <li *ngFor="let tache of experience.taches">{{ tache.tache }}</li>
+    </ul>
+  </div>
+</div>
